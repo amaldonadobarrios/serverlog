@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "cbc85977-1e9d-417f-8d9e-4b5e6bb49ca9",
+		"name": "serverlog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Grabar log",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n        \"logToFile\": \"true\",\r\n        \"logToConsole\": \"true\",\r\n        \"logMessage\": \"true\",\r\n        \"logWarning\": \"true\",\r\n        \"logError\": \"true\",\r\n        \"logToDatabase\": \"true\",\r\n        \"initialized\": \"true\",\r\n        \"logFileFolder\": \"D:\\\\app\",\r\n        \"messageText\": \"NO RESPONDE MICROSERVICIO LISTAR VENTAS\",\r\n        \"warning\": \"true\",\r\n        \"message\": \"false\",\r\n        \"error\": \"true\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/log/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"log",
+						"send"
+					]
+				},
+				"description": "grabar log"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
